@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Insights</title>
+</head>
+<body>
+
+    <h1>Dataset Insights</h1>
+
+    <h2>Head of the Dataset</h2>
+    {{ head_info|safe }}
+
+    <h2>Basic Statistics</h2>
+    {{ stats_info|safe }}
+
+    <h2>Histogram for Payment Types</h2>
+    {{ bar_chart_html|safe }}
+
+    <h2>Flagged Fraud or Not</h2>
+    {{ flagged_fraud_html|safe }}
+
+</body>
+</html>
